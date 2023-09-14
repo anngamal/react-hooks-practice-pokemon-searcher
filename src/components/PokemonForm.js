@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import { Form } from "semantic-ui-react";
 
+
 function PokemonForm() {
+ 
+
   return (
     <div>
       <h3>Add a Pokemon!</h3>
@@ -10,7 +13,7 @@ function PokemonForm() {
           console.log("submitting form...");
         }}
       >
-        <Form.Group widths="equal">
+        <Form.Group widths="equal" >
           <Form.Input fluid label="Name" placeholder="Name" name="name" />
           <Form.Input fluid label="hp" placeholder="hp" name="hp" />
           <Form.Input
